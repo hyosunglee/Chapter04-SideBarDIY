@@ -27,7 +27,7 @@ class RevealViewController: UIViewController {
       // ② 읽어온 컨트롤러를 클래스 전체에서 참조할 수 있도록 contentVC 속성에 저장한다.
       self.contentVC = vc
       // ③ _프론트 컨트롤러 객체를 메인 컨트롤러의 자식으로 등록한다.
-      self.addChildViewController(vc)
+      self.addChild(vc)
       
       // ④ 프론트 컨트롤러의 델리게이트 변수에 참조 정보를 넣어준다.
       let frontVC = vc.viewControllers[0] as? FrontViewController
@@ -36,7 +36,7 @@ class RevealViewController: UIViewController {
       // _프론트 컨트롤러를 메인 컨트롤러의 자식 뷰 컨트롤러로 등록
       self.view.addSubview(vc.view) // _프론트 컨트롤러의 뷰를 메인 컨트롤러의 서브 뷰로 등록
       // _프론트 컨트롤러에 부모 뷰 컨트롤러가 바뀌었음을 알려준다.
-      vc.didMove(toParentViewController: self)
+      vc.didMove(toParent: self)
     }
   }
   // 사이드 바의 뷰를 읽어온다.
@@ -47,12 +47,12 @@ class RevealViewController: UIViewController {
         // ② 다른 메소드에서도 참조할 수 있도록 sideVC 속성에 저장한다.
         self.sideVC = vc
         // ③ 읽어온 사이드 바 컨트롤러 객체를 컨테이너 뷰 컨트롤러에 연결한다.
-        self.addChildViewController(vc)
+        self.addChild(vc)
         self.view.addSubview(vc.view)
         // ④_프론트 컨트롤러에 부모 뷰 컨트롤러가 바뀌었음을 알려준다.
-        vc.didMove(toParentViewController: self)
+        vc.didMove(toParent: self)
         // ⑤ _프론트 컨트롤러의 뷰를 제일 위로 올린다.
-        self.view.bringSubview(toFront: (self.contentVC?.view)!)
+        self.view.bringSubviewToFront((self.contentVC?.view)!)
       }
     }
   }
@@ -77,7 +77,7 @@ class RevealViewController: UIViewController {
     self.setShadowEffect(shadow: true, offset: -2) // 그림자 효과를 준다.
     
     // ② 애니메이션 옵션
-    let options = UIViewAnimationOptions([.curveEaseInOut, .beginFromCurrentState])
+    let options = UIView.AnimationOptions([.curveEaseInOut, .beginFromCurrentState])
     
     // ③ 애니메이션 실행
     UIView.animate(
@@ -98,7 +98,7 @@ class RevealViewController: UIViewController {
   // 사이드 바를 닫는다.
   func closeSideBar(_ complete: ( () -> Void)? ) {
     // 애니메이션 옵션을 정의한다.
-    let options = UIViewAnimationOptions([.curveEaseInOut, .beginFromCurrentState])
+    let options = UIView.AnimationOptions([.curveEaseInOut, .beginFromCurrentState])
     // 애니메이션 실행
     UIView.animate(
       withDuration: TimeInterval(self.SLIDE_TIME),

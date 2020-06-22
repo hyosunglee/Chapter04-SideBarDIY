@@ -12,11 +12,11 @@ class SideBarViewController: UITableViewController {
   
   // 메뉴 제목 배열
   let titles = [
-    "메뉴 01",
-    "메뉴 02",
-    "메뉴 03",
-    "메뉴 04",
-    "메뉴 05"
+    "효성아",
+    "주의_자녀",
+    "바로_너",
+    "주님의_지혜",
+    "이사야11:2"
   ]
   // 메뉴 아이콘 배열
   let icons = [
@@ -30,21 +30,21 @@ class SideBarViewController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    // ① 계정 정보를 표시할 레이블 객체를 정의한다.
-    let accountLabel = UILabel()
-    accountLabel.frame = CGRect(x:10, y:30, width: self.view.frame.width, height: 30)
-    accountLabel.text = "sqlpro@naver.com"
-    accountLabel.textColor = UIColor.white
-    accountLabel.font = UIFont.boldSystemFont(ofSize: 15)
-    
-    // ② 테이블 뷰 상단에 표시될 뷰를 정의한다.
-    let v = UIView()
-    v.frame = CGRect(x:0, y:0, width: self.view.frame.width, height:70)
-    v.backgroundColor = UIColor.brown
-    v.addSubview(accountLabel)
-    
-    // ③ 생성한 뷰 v를 테이블 헤더 뷰 영역에 등록한다.
-    self.tableView.tableHeaderView = v
+//    // ① 계정 정보를 표시할 레이블 객체를 정의한다.
+//    let accountLabel = UILabel()
+//    accountLabel.frame = CGRect(x:10, y:30, width: self.view.frame.width, height: 30)
+//    accountLabel.text = "힘내 효성아 넌 할 수 있어!"
+//    accountLabel.textColor = UIColor.white
+//    accountLabel.font = UIFont.boldSystemFont(ofSize: 15)
+//
+//    // ② 테이블 뷰 상단에 표시될 뷰를 정의한다.
+//    let v = UIView()
+//    v.frame = CGRect(x:0, y:0, width: self.view.frame.width, height:70)
+//    v.backgroundColor = UIColor.brown
+//    v.addSubview(accountLabel)
+//
+//    // ③ 생성한 뷰 v를 테이블 헤더 뷰 영역에 등록한다.
+//    self.tableView.tableHeaderView = v
   }
   
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

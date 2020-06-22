@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,10 +21,13 @@
 		59D8BC181EE96C1F0086AE39 /* RevealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D8BC171EE96C1F0086AE39 /* RevealViewController.swift */; };
 		59D8BC1A1EE96C360086AE39 /* FrontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D8BC191EE96C360086AE39 /* FrontViewController.swift */; };
 		59D8BC1C1EE96C460086AE39 /* SideBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D8BC1B1EE96C460086AE39 /* SideBarViewController.swift */; };
+		EA3CE2AF2491ECAD00EAEB96 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EA3CE2AE2491ECAD00EAEB96 /* Alamofire */; };
+		EA3CE2B52491FCC600EAEB96 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3CE2B42491FCC600EAEB96 /* Default-568h@2x.png */; };
+		EAC583E4249B496D00279556 /* PrayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC583E3249B496D00279556 /* PrayCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		59D8BBF51EE960EF0086AE39 /* Chapter04-SideBarDIY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter04-SideBarDIY.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59D8BBF51EE960EF0086AE39 /* pray_111.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pray_111.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59D8BBF81EE960EF0086AE39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59D8BBFA1EE960EF0086AE39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		59D8BBFD1EE960EF0086AE39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,6 +43,8 @@
 		59D8BC171EE96C1F0086AE39 /* RevealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevealViewController.swift; sourceTree = "<group>"; };
 		59D8BC191EE96C360086AE39 /* FrontViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontViewController.swift; sourceTree = "<group>"; };
 		59D8BC1B1EE96C460086AE39 /* SideBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarViewController.swift; sourceTree = "<group>"; };
+		EA3CE2B42491FCC600EAEB96 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		EAC583E3249B496D00279556 /* PrayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA3CE2AF2491ECAD00EAEB96 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,8 +62,9 @@
 		59D8BBEC1EE960EF0086AE39 = {
 			isa = PBXGroup;
 			children = (
+				EA3CE2B42491FCC600EAEB96 /* Default-568h@2x.png */,
 				59D8BC0A1EE9610E0086AE39 /* Resources */,
-				59D8BBF71EE960EF0086AE39 /* Chapter04-SideBarDIY */,
+				59D8BBF71EE960EF0086AE39 /* pray_111 */,
 				59D8BBF61EE960EF0086AE39 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,12 +72,12 @@
 		59D8BBF61EE960EF0086AE39 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				59D8BBF51EE960EF0086AE39 /* Chapter04-SideBarDIY.app */,
+				59D8BBF51EE960EF0086AE39 /* pray_111.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		59D8BBF71EE960EF0086AE39 /* Chapter04-SideBarDIY */ = {
+		59D8BBF71EE960EF0086AE39 /* pray_111 */ = {
 			isa = PBXGroup;
 			children = (
 				59D8BC171EE96C1F0086AE39 /* RevealViewController.swift */,
@@ -82,8 +89,9 @@
 				59D8BBFF1EE960EF0086AE39 /* Assets.xcassets */,
 				59D8BC011EE960EF0086AE39 /* LaunchScreen.storyboard */,
 				59D8BC041EE960EF0086AE39 /* Info.plist */,
+				EAC583E3249B496D00279556 /* PrayCell.swift */,
 			);
-			path = "Chapter04-SideBarDIY";
+			path = pray_111;
 			sourceTree = "<group>";
 		};
 		59D8BC0A1EE9610E0086AE39 /* Resources */ = {
@@ -102,9 +110,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		59D8BBF41EE960EF0086AE39 /* Chapter04-SideBarDIY */ = {
+		59D8BBF41EE960EF0086AE39 /* pray_111 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 59D8BC071EE960EF0086AE39 /* Build configuration list for PBXNativeTarget "Chapter04-SideBarDIY" */;
+			buildConfigurationList = 59D8BC071EE960EF0086AE39 /* Build configuration list for PBXNativeTarget "pray_111" */;
 			buildPhases = (
 				59D8BBF11EE960EF0086AE39 /* Sources */,
 				59D8BBF21EE960EF0086AE39 /* Frameworks */,
@@ -114,9 +122,12 @@
 			);
 			dependencies = (
 			);
-			name = "Chapter04-SideBarDIY";
+			name = pray_111;
+			packageProductDependencies = (
+				EA3CE2AE2491ECAD00EAEB96 /* Alamofire */,
+			);
 			productName = "Chapter04-SideBarDIY";
-			productReference = 59D8BBF51EE960EF0086AE39 /* Chapter04-SideBarDIY.app */;
+			productReference = 59D8BBF51EE960EF0086AE39 /* pray_111.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -126,15 +137,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = rubypaper;
 				TargetAttributes = {
 					59D8BBF41EE960EF0086AE39 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 1150;
 					};
 				};
 			};
-			buildConfigurationList = 59D8BBF01EE960EF0086AE39 /* Build configuration list for PBXProject "Chapter04-SideBarDIY" */;
+			buildConfigurationList = 59D8BBF01EE960EF0086AE39 /* Build configuration list for PBXProject "pray_111" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -143,11 +155,14 @@
 				Base,
 			);
 			mainGroup = 59D8BBEC1EE960EF0086AE39;
+			packageReferences = (
+				EA3CE2AD2491ECAD00EAEB96 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 59D8BBF61EE960EF0086AE39 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				59D8BBF41EE960EF0086AE39 /* Chapter04-SideBarDIY */,
+				59D8BBF41EE960EF0086AE39 /* pray_111 */,
 			);
 		};
 /* End PBXProject section */
@@ -160,6 +175,7 @@
 				59D8BC031EE960EF0086AE39 /* LaunchScreen.storyboard in Resources */,
 				59D8BC001EE960EF0086AE39 /* Assets.xcassets in Resources */,
 				59D8BC141EE961410086AE39 /* icon03.png in Resources */,
+				EA3CE2B52491FCC600EAEB96 /* Default-568h@2x.png in Resources */,
 				59D8BC161EE961410086AE39 /* sidemenu.png in Resources */,
 				59D8BC151EE961410086AE39 /* icon05.png in Resources */,
 				59D8BC131EE961410086AE39 /* icon04.png in Resources */,
@@ -180,6 +196,7 @@
 				59D8BBFB1EE960EF0086AE39 /* ViewController.swift in Sources */,
 				59D8BC1C1EE96C460086AE39 /* SideBarViewController.swift in Sources */,
 				59D8BC181EE96C1F0086AE39 /* RevealViewController.swift in Sources */,
+				EAC583E4249B496D00279556 /* PrayCell.swift in Sources */,
 				59D8BBF91EE960EF0086AE39 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,12 +237,16 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -275,12 +296,16 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -304,7 +329,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -313,11 +339,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Chapter04-SideBarDIY/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "kr.co.rubypaper.Chapter04-SideBarDIY";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				INFOPLIST_FILE = pray_111/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.logostime.pray_111;
+				PRODUCT_NAME = pray_111;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -326,11 +355,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Chapter04-SideBarDIY/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "kr.co.rubypaper.Chapter04-SideBarDIY";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				INFOPLIST_FILE = pray_111/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.logostime.pray_111;
+				PRODUCT_NAME = pray_111;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -338,7 +370,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		59D8BBF01EE960EF0086AE39 /* Build configuration list for PBXProject "Chapter04-SideBarDIY" */ = {
+		59D8BBF01EE960EF0086AE39 /* Build configuration list for PBXProject "pray_111" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				59D8BC051EE960EF0086AE39 /* Debug */,
@@ -347,7 +379,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		59D8BC071EE960EF0086AE39 /* Build configuration list for PBXNativeTarget "Chapter04-SideBarDIY" */ = {
+		59D8BC071EE960EF0086AE39 /* Build configuration list for PBXNativeTarget "pray_111" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				59D8BC081EE960EF0086AE39 /* Debug */,
@@ -357,6 +389,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EA3CE2AD2491ECAD00EAEB96 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EA3CE2AE2491ECAD00EAEB96 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EA3CE2AD2491ECAD00EAEB96 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 59D8BBED1EE960EF0086AE39 /* Project object */;
 }
